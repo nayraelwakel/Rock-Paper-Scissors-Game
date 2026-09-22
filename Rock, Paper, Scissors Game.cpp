@@ -5,19 +5,6 @@
 #include <cctype>
 using namespace std;
 
-string getChoiceName(char choice)
-{
-	if (choice == 'r')
-	{
-		return "Rock";
-	}
-	if (choice == 'p')
-	{
-		return "Paper";
-	}
-	return "Scissrs";
-}
-
 int main()
 {
 	srand(static_cast<unsigned int>(time(0)));
