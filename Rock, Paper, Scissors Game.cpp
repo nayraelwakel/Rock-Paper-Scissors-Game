@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <string>
+#include <cctype>
 using namespace std;
 
 string getChoiceName(char choice)
@@ -34,6 +35,7 @@ int main()
 		{
 			cout << "Enter your choice (r/p/s): ";
 			cin >> playerChoice;
+			playerChoice = tolower(playerChoice);
 			if (playerChoice == 'r' || playerChoice == 'p' || playerChoice == 's')
 			{
 				break;
